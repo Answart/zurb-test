@@ -1,2 +1,131 @@
-<h1>MainPages#home</h1>
-<p>Find me in app/views/main_pages/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <%= content_for?(:title) ? yield(:title) : "Main" %>
+    </title>
+  </head>
+  <body>
+
+<!-- ORBIT -->
+    <div class="homefullwidth">
+      <div class="hide-for-small">
+        <ul data-orbit> <!--class="example-orbit orbit-slides-container"> -->
+          <li class="active">
+            <img src="../assets/images/orbit/bridge.png" alt="slide 1" />
+            <div class="orbit-caption">
+              Caption One.
+            </div>
+          </li>
+          <li>
+            <img src="../assets/images/orbit/cityview.png" alt="slide 2" />
+            <div class="orbit-caption">
+              Caption Two.
+            </div>
+          </li>
+          <li>
+            <img src="../assets/images/orbit/bridge2.png" alt="slide 3" />
+            <div class="orbit-caption">
+              Caption Three.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+<!-- INTRO BLURB -->
+    <div id="row">
+      <div class="large-12 columns panel">
+          <div class="small-8 columns">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptatum assumenda pariatur soluta libero delectus asperiores! Nostrum dolor minima voluptate impedit aliquid tempore unde necessitatibus.
+            </h3>
+          </div>
+          <div class="small-4 columns">
+            <div class="text-center">
+              <a href="main_pages/contact" class="center inline button [radius round]">Hire Alexandra</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Programmer, Designer, Visionary -->
+<div class="row">
+  <div class="large-4 columns">
+    <img src="http://lorempixel.com/output/technics-q-c-364-209-7.jpg" alt="">
+    <div class="text-center"><h4>Lorem ipsum.</h4></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis, vel consequuntur dignissimos vitae nobis.</p>
+  </div>
+  <div class="large-4 columns">
+    <img src="http://lorempixel.com/output/technics-q-c-364-209-4.jpg" alt="">
+    <div class="text-center"><h4>Cum, cumque.</h4></div>
+    <p>Culpa, expedita, fugiat, similique ipsum quibusdam atque quis deleniti quia autem voluptates sequi doloribus nesciunt?</p>
+  </div>
+  <div class="large-4 columns">
+    <img src="http://lorempixel.com/output/technics-q-c-364-209-8.jpg" alt="">
+    <div class="text-center"><h4>Quod, neque.</h4></div>
+    <p>Nulla, necessitatibus, deleniti, aspernatur, excepturi iure dolore ab expedita doloremque consectetur beatae esse voluptate neque.</p>
+  </div>
+</div>
+
+<!-- Experience, Skills -->
+<div class="row">
+  <div class="large-6 columns">
+    <div class="text-center"><h4>Lorem.</h4></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, at, labore quae doloremque facere aliquid deserunt similique sapiente in animi pariatur nisi quaerat voluptas.A, modi, eligendi alias consequuntur dolore sunt sed doloremque dolores error expedita eum cumque in fuga iusto ipsa porro blanditiis fugiat quis qui quisquam.</p>
+  </div>
+  <div class="large-6 columns">
+    <div class="text-center"><h4>Autem.</h4></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quisquam hic facere qui eos dolorem deserunt. Debitis accusantium nobis autem qui accusamus eligendi similique.Eaque, sapiente tenetur non possimus similique explicabo et nam. Earum, eligendi, error tenetur enim unde dolore ducimus perferendis delectus quos necessitatibus minus esse corporis?</p>
+  </div>
+</div>
+
+<hr></hr>
+<!-- Recent Projects -->
+<div class="row">
+  <div class="large-12 columns">
+    <h4>Lorem ipsum.</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-4 columns"><img src="http://lorempixel.com/output/nightlife-q-c-256-214-10.jpg" alt=""></div>
+  <div class="large-8 columns">
+    <a href="" class="h4">Lorem ipsum dolor.</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, nulla, repellendus architecto necessitatibus labore minima quidem aspernatur repudiandae unde veritatis debitis dolores odio quod recusandae laborum perferendis nostrum ullam possimus voluptatibus consequatur! Velit, veritatis, iusto ex quia ducimus beatae atque quo in laboriosam adipisci voluptates praesentium recusandae odit facilis dignissimos.</p>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="large-4 columns"><img src="http://lorempixel.com/output/nightlife-q-c-256-214-8.jpg" alt=""></div>
+  <div class="large-8 columns">
+    <a href="" class="h4">Quis, enim, culpa?</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, earum, rerum, beatae ipsam fugit iure cupiditate at temporibus est in porro quaerat minus nisi expedita autem atque mollitia tempora dignissimos cum enim. Totam, officiis adipisci dicta! Consectetur, reprehenderit cum expedita.</p>
+  </div>
+</div>
+<hr></hr>
+
+<!-- Education, References -->
+<div class="row">
+  <div class="large-6 columns">
+    <div class="text-center"><h4>Lorem.</h4></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, ullam, in nobis consequatur adipisci quod molestiae. Consequuntur, reprehenderit ipsum quia debitis omnis quisquam deserunt ut dicta eaque eveniet hic ducimus ipsa vitae necessitatibus beatae possimus?</p>
+  </div>
+  <div class="large-6 columns">
+    <div class="text-center"><h4>Autem.</h4></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, architecto nam temporibus fugit porro doloremque dolore beatae vel possimus dolor.</p>
+  </div>
+</div>
+
+<!-- Twitter BLURB -->
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ratione voluptate necessitatibus facilis repellendus optio.</h3>
+        </div>
+      </div>
+    </div>
+
+  </body>
+ </html>

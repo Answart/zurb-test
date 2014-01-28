@@ -1,2 +1,50 @@
-<h1>MainPages#contact</h1>
-<p>Find me in app/views/main_pages/contact.html.erb</p>
+<!doctype html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : "Current" %></title>
+  </head>
+  <body>
+  <br />
+    <div id="row" class="row container">
+      <div id="content">
+<!-- contact section -->
+        <div id="main" class="large-8 columns clearfix contact_page">
+          <article id="post-12" class="post-12 page type-page status-publish hentry clearfix">
+            <div class="row">
+              <h4>Contact Me</h4>
+              <hr></hr>
+            </div>
+            <dl class="tabs" data-tab>
+              <dd class="active"><a href="#proposal">Project Proposal</a></dd>
+              <dd><a href="#say-hi">Say Hi</a></dd>
+            </dl>
+            <div class="tabs-content">
+  <!-- proposal form -->
+              <div class="content active" id="proposal">
+                  <form>
+                    <%= render "main_pages/projectform" %>
+                  </form>
+                </div>
+              </div>
+  <!-- say-hi form -->
+              <div class="content" id="say-hi">
+                <form>
+                  <%= render "main_pages/sayhiform" %>
+                </form>
+              </div>
+            </div>
+          </article>
+
+<!-- sidebar -->
+        <div id="sidebar" class="sidebar large-3 columns offset-by-one panel">
+          <h5>address1</h5>
+          <h5>address2</h5>
+          <h5>address3</h5>
+          <hr></hr>
+          <p>Twitter</p>
+          <hr></hr>
+          <a href="https://twitter.com/alexandraswart">Follow @alexandraswart</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

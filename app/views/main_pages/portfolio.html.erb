@@ -1,2 +1,56 @@
-<h1>MainPages#portfolio</h1>
-<p>Find me in app/views/main_pages/portfolio.html.erb</p>
+<!doctype html>
+  <head>
+    <title>
+      <%= content_for?(:title) ? yield(:title) : "Portfolio" %>
+    </title>
+  </head>
+  <body>
+
+<!-- top image -->
+    <div id="row">
+      <div class="homefullwidth hide-for-small">
+        <img src="http://static.tumblr.com/vp7vgid/qYZmztpmw/qwqer.png" alt="" height="500">
+      </div>
+    </div>
+
+<!-- filter -->
+  	<div class="row">
+      <div class="homefullwidth"> 
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptatum assumenda pariatur soluta libero delectus asperiores! Nostrum dolor minima voluptate impedit aliquid tempore unde necessitatibus.
+        </h5>
+      </div>
+    </div>
+
+    <hr></hr>
+    <div class="large-12 columns" style="height: 660px">
+ 
+<!-- row 1 -->
+      <div class="row">
+        <div class="large-6 columns">
+          <img src="http://lorempixel.com/output/technics-q-c-364-209-7.jpg" alt="">
+          <div class="text-center"><h4>Lorem ipsum.</h4></div>
+        </div>
+        <div class="large-6 columns">
+          <img src="http://lorempixel.com/output/technics-q-c-364-209-4.jpg" alt="">
+          <div class="text-center"><h4>Cum, cumque.</h4></div>
+        </div>
+      </div>
+
+<!-- row 2 -->
+      <div class="row">
+        <div class="large-6 columns">
+          <img src="http://lorempixel.com/output/technics-q-c-364-209-4.jpg" alt="">
+          <div class="text-center"><h4>Cum, cumque.</h4></div>
+        </div>
+        <div class="large-6 columns">
+          <img src="http://lorempixel.com/output/technics-q-c-364-209-8.jpg" alt="">
+          <div class="text-center"><h4>Quod, neque.</h4></div>
+        </div>
+      </div>
+
+<!-- end --> 
+    </div>
+  </body>
+</html>
+
+
